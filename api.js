@@ -10,7 +10,7 @@ const createRandomString = (length) => {
     return result
 }
 
-const redirect_uri = 'http://localhost:3000'
+const redirect_uri = 'https://spotif-frontend.herokuapp.com'
 
 export const login = (req, res) => {
     const state = createRandomString(16)
