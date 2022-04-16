@@ -15,4 +15,4 @@ app.get('/login', (req, res) => login(req, res))
 app.post('/request_token', (req, res) => requestToken(req, res))
 app.post('/refresh_token', (req, res) => refreshToken(req, res))
 
-app.listen(4000, () => { console.log("Listening port 4000") })
+app.listen(process.env.PORT || 4000, () => { console.log("Listening...") })
